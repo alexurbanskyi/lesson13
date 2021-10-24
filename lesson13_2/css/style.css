@@ -1,0 +1,120 @@
+@font-face {
+	font-family: 'ConvMuseoSansRounded-300';
+	src: url('../fonts/MuseoSansRounded-300.eot');
+	src: local('☺'), url('../fonts/MuseoSansRounded-300.woff') format('woff'), url('../font/MuseoSansRounded-300.ttf') format('truetype'), url('../font/MuseoSansRounded-300.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+*{
+   padding: 0;
+   margin: 0;
+   text-decoration: none;
+   box-sizing: border-box;
+   font-family: 'ConvMuseoSansRounded-300';
+}
+body{
+   background-color: #252525; 
+}
+.card{
+   width: 800px;
+   height: 600px;
+   background-image: url('../img/back1.png') , url('../img/back2.png');
+   background-repeat: no-repeat;
+   background-position: 50% 50%;
+   background-color: rgb(212, 198, 198);
+   position: absolute;
+   transform: translate(-50%, -50%);
+   top: 50%;
+   left: 50%
+}
+.card__box{
+   width: 685px;
+   height: 385px;
+   background-color: #111A28;
+   border-radius: 10px;
+   position: absolute;
+   transform: translate(-50%, -50%);
+   top: 50%;
+   left: 50%
+   
+}
+.card__wrapper{
+   display: flex;
+   align-items: center;
+   height: 100%;
+   justify-content: space-around;
+   position: relative;
+}
+.card__logo{
+   position: absolute;
+   top: 20px;
+   left: 20px;
+}
+.card__title{
+   color: white;
+   width: 185px;
+}
+.card__rating{
+   padding: 10px 0 10px 0;
+}
+.card__properties{
+   display: flex;
+   padding: 10px 0 10px 0;
+   color: grey;
+}
+.card__name{
+   font-size: 24px;
+   line-height: 26px;
+}
+.card__sex{
+   color: grey;
+   padding: 10px 0 10px 0;
+   font-size: 14px;
+}
+.card__size, .card__quantity{
+   border: 1px solid grey;
+   width: 65px;
+   margin-right: 3px;
+   text-align: center;
+   padding: 8px 0;
+}
+.card__quantity:after{
+   content: "";
+   width: 10px;
+   height: 10px;
+   background-image: url('../img/Rectangle.png');
+   background-repeat: no-repeat;
+   background-position: center;
+   display: inline-block;
+   margin-left: 10px ;
+}
+.card__size:after{
+   content: "";
+   width: 10px;
+   height: 10px;
+   background-image: url('../img/Rectangle.png');
+   background-repeat: no-repeat;
+   background-position: center;
+   display: inline-block;
+   margin-left: 10px ;
+}
+.card__btn a{
+   color: white;
+}
+.card__btn{
+   background: #202835;
+   width: 180px;
+   text-align: center;
+   padding: 15px 0;
+   margin-top: 15px;
+   border: 1px solid grey;
+}
+.card__scroll{
+   position: absolute;
+   bottom: 20px;
+   left: 180px;
+}
+.card__scroll img{
+   display: inline-block;
+   padding-left: 5px;
+}
